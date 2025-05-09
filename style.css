@@ -1,0 +1,313 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic font and color */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    line-height: 1.6;
+  }
+  
+  /* Container for consistent width */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    background-color: #005b96;
+    padding: 20px 0;
+    color: #fff;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  header nav ul li a:hover,
+  header nav ul li a.active {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #007acc;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .hero {
+    background: url("../images/background.jpg") no-repeat center center / cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Optional: dark overlay for text readability */
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+    z-index: -1;
+  }
+  
+  
+  .hero h2 {
+    font-size: 2.5em;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+  }
+  
+  /* Service Times */
+  .services {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .services ul {
+    list-style: none;
+  }
+  
+  .services ul li {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  /* About Section */
+  .about-page {
+    background: url("../images/aboutus.jpg") no-repeat center center / cover;
+    color: #fff;
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .about-page::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+    z-index: -1;
+  }
+  
+  .about-page .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  
+  .about-preview {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .about-preview h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .about-preview p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .about-preview .btn {
+    padding: 10px 20px;
+    background-color: #005b96;
+    color: #fff;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .about-preview .btn:hover {
+    background-color: #007acc;
+  }
+  
+  
+  /* Events Section */
+  .events-page {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .event {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .event p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  /* Sermons Section */
+  .sermons-page {
+    padding: 40px 0;
+    background-color: #fff;
+  }
+  
+  .sermon {
+    margin-bottom: 40px;
+  }
+  
+  .sermon iframe,
+  .sermon audio {
+    width: 100%;
+    height: 315px;
+  }
+  
+  /* Contact Section */
+  .contact-page {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+  }
+  
+  .contact-details {
+    margin-bottom: 30px;
+  }
+  
+  .contact-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    padding: 12px;
+    background-color: #005b96;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #007acc;
+  }
+  
+  /* Donate Section */
+  .donate-page {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .donate-page h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .donate-page p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .paypal-button form {
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .paypal-button button {
+    padding: 15px 30px;
+    background-color: #0070ba;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .paypal-button button:hover {
+    background-color: #005b96;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    font-size: 1em;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h2 {
+      font-size: 2em;
+    }
+  
+    .hero p {
+      font-size: 1.1em;
+    }
+  
+    .services ul li {
+      font-size: 1.2em;
+    }
+  
+    .about-preview h3,
+    .events-page h3,
+    .sermon h3 {
+      font-size: 1.8em;
+    }
+  
+    .event h3 {
+      font-size: 1.6em;
+    }
+  }
+  
